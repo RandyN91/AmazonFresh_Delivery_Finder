@@ -1,4 +1,11 @@
-#Import all required libraries below 
+#This is a clone and modification of https://github.com/pcomputo/Whole-Foods-Delivery-Slot/blob/master/amazon_fresh_delivery_slot_chrome.py
+#Import all required libraries below , this runs on Python 3.4 
+#Install ChromeDriver (this is a browser instance that launches and is controlled by the code below
+#be sure to fill in the required fields (email etc) before running
+#When the chromedriver window launches, login to amazon (make sure cart is already filled) then go to checkout/delivery page 
+#it will start to refresh the page now and look for HTML that indicates a slow opens up, i've added code so it emails me, you may want
+#to whitelist the email you send from in case your email client puts it to junk. or modify the code to notify you another way.
+
 import bs4
 from selenium import webdriver 
 import sys
