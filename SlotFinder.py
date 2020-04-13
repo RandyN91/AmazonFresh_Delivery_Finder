@@ -32,7 +32,7 @@ def AWS_SlotFinder(checkoutUrl):
             s = smtplib.SMTP('smtp.office365.com', 587)
             s.starttls()
             s.login("insert email", "insert password")
-            s.sendmail("randy.naraine@mail.citytech.cuny.edu", "randy.naraine64@gmail.com", "Subject:Open Slot Alert" +"\n\n"+"Found slots!!!!!!!!!!!!!")
+            s.sendmail("INSERT SENDER EMAIL", "INSERT DESTINATION EMAIL", "Subject:Open Slot Alert" +"\n\n"+"Found slots!!!!!!!!!!!!!")
             print("sent mail")
             s.quit()
             no_open_slots = False
